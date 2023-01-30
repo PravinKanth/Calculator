@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The charming calculator that comes up with two toggle modes"
+    />
+    <link rel="icon" href="images/calculator (1).png" />
+    <link rel="apple-touch-icon" href="images/calculator (1).png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./calci.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Calculator &mdash; Try out.!</title>
+  </head>
+  <body>
+    <!-- <header class="header">
+      <div class="header-log">PRACTICE</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="anchor-li" href="#">MENU 1</a></li>
+          <li><a class="anchor-li" href="#">MENU 2</a></li>
+          <li><a class="anchor-li" href="#">MENU 3</a></li>
+          <li><a class="anchor-li cta" href="#calculator">Calculator</a></li>
+        </ul>
+      </nav>
+    </header> -->
+    <section class="section-1" id="calculator">
+      <div class="out">
+        <button
+          name="toggle"
+          onclick="tfunc()"
+          class="toggle"
+          id="toggle"
+        ></button>
+        <p class="powered">
+          Powered by
+          <img class="foodchef" src="images/foodchef.png" alt="foodchef" /><img
+            class="foodchefw"
+            src="images/foodchefw.png"
+            alt="foodchef"
+          />
+        </p>
+        <form>
+          <input type="text" id="display" />
+        </form>
+        <div class="container">
+          <button name="itemc" onclick="func('C')" class="calci itemc">
+            C
+          </button>
+          <button name="itemer" onclick="func('er')" class="calci itemer">
+            <ion-icon name="backspace-outline"></ion-icon>
+          </button>
+          <button name="itemdiv" onclick="func('/')" class="calci itemdiv">
+            &divide;
+          </button>
+          <button name="itemmul" onclick="func('*')" class="calci itemmul">
+            x
+          </button>
+          <button name="item7" onclick="func('7')" class="calci item7">
+            7
+          </button>
+          <button name="item8" onclick="func('8')" class="calci item8">
+            8
+          </button>
+          <button name="item9" onclick="func('9')" class="calci item9">
+            9
+          </button>
+          <button name="itemminus" onclick="func('-')" class="calci itemminus">
+            -
+          </button>
+          <button name="item4" onclick="func('4')" class="calci item4">
+            4
+          </button>
+          <button name="item5" onclick="func('5')" class="calci item5">
+            5
+          </button>
+          <button name="item6" onclick="func('6')" class="calci item6">
+            6
+          </button>
+          <button name="itemplus" onclick="func('+')" class="calci itemplus">
+            +
+          </button>
+          <button name="item1" onclick="func('1')" class="calci item1">
+            1
+          </button>
+          <button name="item2" onclick="func('2')" class="calci item2">
+            2
+          </button>
+          <button name="item3" onclick="func('3')" class="calci item3">
+            3
+          </button>
+          <button name="itemeq" onclick="func('=')" class="calci itemeq">
+            =
+          </button>
+          <button name="item0" onclick="func('0')" class="calci item0">
+            0
+          </button>
+          <button name="item." onclick="func('.')" class="calci item.">
+            .
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
